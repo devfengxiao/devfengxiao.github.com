@@ -72,63 +72,218 @@
 <pre><code> <span class="variable">$ </span>sudo gem install cocoapods
  <span class="variable">$ </span>pod setup</code></pre>
 <p>这样就安装结束了。然后就可以使用了。</p>
+<h4>查找</h4>
+<p>你可以通过</p>
+<pre><code> <span class="title">pod</span> search XXXX(来查找你所需要得库)</code></pre>
+<p>比如查找一个我们最常用得json库</p>
+<pre><code><span class="comment">~</span>  <span class="comment">pod</span> <span class="comment">search</span> <span class="comment">json</span>
+  <span class="literal">-</span>&gt; <span class="comment">AFJSONPRequestOperation</span> <span class="comment">(1</span>.<span class="comment">0</span>.<span class="comment">0)</span>
+<span class="comment">AFNetworking</span> <span class="comment">Extension</span> <span class="comment">for</span> <span class="comment">the</span> <span class="comment">JSONP</span> <span class="comment">format</span>.
+<span class="comment">pod</span> <span class="comment">'AFJSONPRequestOperation'</span>, <span class="comment">'~</span>&gt; <span class="comment">1</span>.<span class="comment">0</span>.<span class="comment">0'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/acerbetti/AFJSONPRequestOperation</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/acerbetti/AFJSONPRequestOperation</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">0</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">AFJSONRPCClient</span> <span class="comment">(0</span>.<span class="comment">4</span>.<span class="comment">0)</span>
+<span class="comment">A</span> <span class="comment">JSON</span>-<span class="comment">RPC</span> <span class="comment">client</span> <span class="comment">build</span> <span class="comment">on</span> <span class="comment">AFNetworking</span>.
+<span class="comment">pod</span> <span class="comment">'AFJSONRPCClient'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">4</span>.<span class="comment">0'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/AFNetworking/AFJSONRPCClient</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/AFNetworking/AFJSONRPCClient</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">4</span>.<span class="comment">0</span>, <span class="comment">0</span>.<span class="comment">3</span>.<span class="comment">1</span>, <span class="comment">0</span>.<span class="comment">3</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">AnyJSON</span> <span class="comment">(0</span>.<span class="comment">1</span>.<span class="comment">0)</span>
+<span class="comment">Encode</span> <span class="comment">/</span> <span class="comment">Decode</span> <span class="comment">JSON</span> <span class="comment">by</span> <span class="comment">any</span> <span class="comment">means</span> <span class="comment">possible</span>.
+<span class="comment">pod</span> <span class="comment">'AnyJSON'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">0'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/mattt/AnyJSON</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/mattt/AnyJSON</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">0</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">ARSafeJSON</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">7)</span>
+<span class="comment">ARSafeJSON</span> <span class="comment">is</span> <span class="comment">a</span> <span class="comment">small</span> <span class="comment">library</span> <span class="comment">that</span> <span class="comment">will</span> <span class="comment">strip</span> <span class="comment">all</span> <span class="comment">occurences</span> <span class="comment">of</span> <span class="comment">NSNull</span> <span class="comment">from</span> <span class="comment">a</span>
+<span class="comment">JSON</span> <span class="comment">of</span> <span class="comment">any</span> <span class="comment">depth</span>.
+<span class="comment">pod</span> <span class="comment">'ARSafeJSON'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">7'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://bitbucket</span>.<span class="comment">org/antoine_r/arsafejson</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://bitbucket</span>.<span class="comment">org/antoine_r/arsafejson</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">7</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">3</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">Collection</span>-<span class="comment">JSON</span>-<span class="comment">ObjC</span> <span class="comment">(1</span>.<span class="comment">0</span>.<span class="comment">1)</span>
+<span class="comment">Collection</span>+<span class="comment">JSON</span> <span class="comment">parser</span> <span class="comment">for</span> <span class="comment">Objective</span>-<span class="comment">C</span>.
+<span class="comment">pod</span> <span class="comment">'Collection</span>-<span class="comment">JSON</span>-<span class="comment">ObjC'</span>, <span class="comment">'~</span>&gt; <span class="comment">1</span>.<span class="comment">0</span>.<span class="comment">1'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/chrissearle/Collection</span>-<span class="comment">JSON</span>-<span class="comment">ObjC</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/chrissearle/Collection</span>-<span class="comment">JSON</span>-<span class="comment">ObjC</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">FXJSON</span> <span class="comment">(1</span>.<span class="comment">1)</span>
+<span class="comment">Lightweight</span>, <span class="comment">ARC</span>-<span class="comment">friendly</span> <span class="comment">JSON</span> <span class="comment">library</span>, <span class="comment">supporting</span> <span class="comment">both</span> <span class="comment">DOM</span> <span class="comment">and</span> <span class="comment">SAX</span> <span class="comment">style</span>
+<span class="comment">parsing</span>.
+<span class="comment">pod</span> <span class="comment">'FXJSON'</span>, <span class="comment">'~</span>&gt; <span class="comment">1</span>.<span class="comment">1'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/nicklockwood/FXJSON</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/nicklockwood/FXJSON</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">GDJson</span> <span class="comment">(0</span>.<span class="comment">3</span>.<span class="comment">0)</span>
+<span class="comment">J2ObjC</span> <span class="comment">implementation</span> <span class="comment">of</span> <span class="comment">GWT</span> <span class="comment">Elemental</span> <span class="comment">JSON</span> <span class="comment">library</span>.
+ <span class="comment">pod</span> <span class="comment">'GDJson'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">3</span>.<span class="comment">0'</span>
+ <span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/goodow/realtime</span>
+ <span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/goodow/GDJson</span>.<span class="comment">git</span>
+ <span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">3</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">jsoncpp</span> <span class="comment">(0</span>.<span class="comment">6</span>.<span class="comment">0</span>.<span class="comment">rc2)</span>
+<span class="comment">jsoncpp</span> <span class="comment">is</span> <span class="comment">an</span> <span class="comment">implementation</span> <span class="comment">of</span> <span class="comment">a</span> <span class="comment">JSON</span> <span class="comment">(http://json</span>.<span class="comment">org)</span> <span class="comment">reader</span> <span class="comment">and</span> <span class="comment">writer</span> <span class="comment">in</span>
+<span class="comment">C</span>+<span class="literal">+</span><span class="string">.</span>
+<span class="comment">pod</span> <span class="comment">'jsoncpp'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">6</span>.<span class="comment">0</span>.<span class="comment">rc2'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">http://jsoncpp</span>.<span class="comment">sourceforge</span>.<span class="comment">net/</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://svn</span>.<span class="comment">code</span>.<span class="comment">sf</span>.<span class="comment">net/p/jsoncpp/code/tags/jsoncpp/0</span>.<span class="comment">6</span>.<span class="comment">0</span>-<span class="comment">rc2/</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">6</span>.<span class="comment">0</span>.<span class="comment">rc2</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">JSONJoy</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">2)</span>
+<span class="comment">Makes</span> <span class="comment">JSON</span> <span class="comment">a</span> <span class="comment">joy</span> <span class="comment">to</span> <span class="comment">use</span>
+<span class="comment">pod</span> <span class="comment">'JSONJoy'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">2'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/daltoniam/JSONJoy</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/daltoniam/JSONJoy</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">2</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">JSONKit</span> <span class="comment">(1</span>.<span class="comment">5pre)</span>
+<span class="comment">A</span> <span class="comment">Very</span> <span class="comment">High</span> <span class="comment">Performance</span> <span class="comment">Objective</span>-<span class="comment">C</span> <span class="comment">JSON</span> <span class="comment">Library</span>.
+<span class="comment">pod</span> <span class="comment">'JSONKit'</span>, <span class="comment">'~</span>&gt; <span class="comment">1</span>.<span class="comment">5pre'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/johnezang/JSONKit</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/johnezang/JSONKit</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">5pre</span>, <span class="comment">1</span>.<span class="comment">4</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">JsonLite</span> <span class="comment">(1</span>.<span class="comment">1</span>.<span class="comment">0)</span>
+ <span class="comment">High</span> <span class="comment">performance</span> <span class="comment">and</span> <span class="comment">low</span> <span class="comment">memory</span> <span class="comment">footprint</span> <span class="comment">JSON</span> <span class="comment">parser</span> <span class="comment">for</span> <span class="comment">mobile/embedded</span>
+ <span class="comment">systems</span>
+ <span class="comment">pod</span> <span class="comment">'JsonLite'</span>, <span class="comment">'~</span>&gt; <span class="comment">1</span>.<span class="comment">1</span>.<span class="comment">0'</span>
+ <span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/amamchur/jsonlite</span>
+ <span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/amamchur/jsonlite</span>.<span class="comment">git</span>
+ <span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">1</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">JSONModel</span> <span class="comment">(0</span>.<span class="comment">10</span>.<span class="comment">0)</span>
+ <span class="comment">Magical</span> <span class="comment">Data</span> <span class="comment">Modelling</span> <span class="comment">Framework</span> <span class="comment">for</span> <span class="comment">JSON</span>. <span class="comment">Create</span> <span class="comment">rapidly</span> <span class="comment">powerful</span>, <span class="comment">atomic</span>
+ <span class="comment">and</span> <span class="comment">smart</span> <span class="comment">data</span> <span class="comment">model</span> <span class="comment">classes</span>.
+ <span class="comment">pod</span> <span class="comment">'JSONModel'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">10</span>.<span class="comment">0'</span>
+ <span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">http://www</span>.<span class="comment">jsonmodel</span>.<span class="comment">com</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/icanzilb/JSONModel</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">10</span>.<span class="comment">0</span>, <span class="comment">0</span>.<span class="comment">9</span>.<span class="comment">3</span>, <span class="comment">0</span>.<span class="comment">9</span>.<span class="comment">2</span>, <span class="comment">0</span>.<span class="comment">9</span>.<span class="comment">1</span>, <span class="comment">0</span>.<span class="comment">9</span>.<span class="comment">0</span>, <span class="comment">0</span>.<span class="comment">8</span>.<span class="comment">4</span>, <span class="comment">0</span>.<span class="comment">8</span>.<span class="comment">2</span>, <span class="comment">0</span>.<span class="comment">8</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span>
+ <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">JSONSyntaxHighlight</span> <span class="comment">(1</span>.<span class="comment">0</span>.<span class="comment">0)</span>
+<span class="comment">Add</span> <span class="comment">syntax</span> <span class="comment">highlighting</span> <span class="comment">to</span> <span class="comment">JSON</span> <span class="comment">objects</span> <span class="comment">in</span> <span class="comment">Objective</span> <span class="comment">C</span> <span class="comment">for</span> <span class="comment">both</span> <span class="comment">Cocoa</span> <span class="comment">and</span> <span class="comment">iOS</span>
+<span class="comment">without</span> <span class="comment">using</span> <span class="comment">HTML</span>.
+<span class="comment">pod</span> <span class="comment">'JSONSyntaxHighlight'</span>, <span class="comment">'~</span>&gt; <span class="comment">1</span>.<span class="comment">0</span>.<span class="comment">0'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/bahamas10/JSONSyntaxHighlight</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/bahamas10/JSONSyntaxHighlight</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">0</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">MTJSONDictionary</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">4)</span>
+<span class="comment">An</span> <span class="comment">NSDictionary</span> <span class="comment">category</span> <span class="comment">for</span> <span class="comment">when</span> <span class="comment">you're</span> <span class="comment">working</span> <span class="comment">with</span> <span class="comment">it</span> <span class="comment">converting</span> <span class="comment">to/from</span>
+<span class="comment">JSON</span>. <span class="comment">DEPRECATED</span>, <span class="comment">use</span> <span class="comment">MTJSONUtils</span> <span class="comment">instead</span>.
+<span class="comment">pod</span> <span class="comment">'MTJSONDictionary'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">4'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONDictionary</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONDictionary</span>.<span class="comment">git</span>
+ <span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">4</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">3</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">2</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">MTJSONUtils</span> <span class="comment">(0</span>.<span class="comment">1</span>.<span class="comment">1)</span>
+ <span class="comment">An</span> <span class="comment">NSObject</span> <span class="comment">category</span> <span class="comment">for</span> <span class="comment">working</span> <span class="comment">with</span> <span class="comment">JSON</span>.
+ <span class="comment">pod</span> <span class="comment">'MTJSONUtils'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">1'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONUtils</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONUtils</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">1</span>, <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">0</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">PKJSONSocket</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">3)</span>
+<span class="comment">Simplified</span> <span class="comment">socket</span> <span class="comment">networking</span> <span class="comment">based</span> <span class="comment">on</span> <span class="comment">CocoaAsynSocket</span>. <span class="comment">Enabling</span> <span class="comment">direct</span> <span class="comment">JSON</span>
+<span class="comment">messaging</span> <span class="comment">between</span> <span class="comment">devices</span>.
+<span class="comment">pod</span> <span class="comment">'PKJSONSocket'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">3'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/pkluz/PKJSONSocket</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/pkluz/PKJSONSocket</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">3</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">2</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">RDHJSONObjectSerialisation</span> <span class="comment">(0</span>.<span class="comment">5</span>.<span class="comment">0)</span>
+<span class="comment">Simple</span> <span class="comment">JSON</span> <span class="comment">serialisation</span> <span class="comment">for</span> <span class="comment">any</span> <span class="comment">custom</span> <span class="comment">NSObject</span> <span class="comment">based</span> <span class="comment">on</span> <span class="comment">its</span> <span class="comment">declared</span>
+<span class="comment">properties</span>.
+<span class="comment">pod</span> <span class="comment">'RDHJSONObjectSerialisation'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">5</span>.<span class="comment">0'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/rhodgkins/RDHJSONObjectSerialisation</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/rhodgkins/RDHJSONObjectSerialisation</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">5</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">SBJson</span> <span class="comment">(3</span>.<span class="comment">2)</span>
+<span class="comment">This</span> <span class="comment">library</span> <span class="comment">implements</span> <span class="comment">strict</span> <span class="comment">JSON</span> <span class="comment">parsing</span> <span class="comment">and</span> <span class="comment">generation</span> <span class="comment">in</span> <span class="comment">Objective</span>-<span class="comment">C</span>.
+<span class="comment">pod</span> <span class="comment">'SBJson'</span>, <span class="comment">'~</span>&gt; <span class="comment">3</span>.<span class="comment">2'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">http://stig</span>.<span class="comment">github</span>.<span class="comment">com/json</span>-<span class="comment">framework/</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/stig/json</span>-<span class="comment">framework</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">3</span>.<span class="comment">2</span>, <span class="comment">3</span>.<span class="comment">1</span>.<span class="comment">1</span>, <span class="comment">3</span>.<span class="comment">1</span>, <span class="comment">3</span>.<span class="comment">0</span>.<span class="comment">4</span>, <span class="comment">2</span>.<span class="comment">2</span>.<span class="comment">3</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">SDJSONPrettyPrint</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">1)</span>
+ <span class="comment">Produces</span> <span class="comment">human</span>-<span class="comment">friendly</span> <span class="comment">JSON</span>, <span class="comment">which</span> <span class="comment">you</span> <span class="comment">can</span> <span class="comment">use</span> <span class="comment">for</span> <span class="comment">logging</span> <span class="comment">or</span> <span class="comment">debugging</span>
+<span class="comment">purposes</span>.
+<span class="comment">pod</span> <span class="comment">'SDJSONPrettyPrint'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/tyrone</span>-<span class="comment">sudeium/SDJSONPrettyPrint</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/tyrone</span>-<span class="comment">sudeium/SDJSONPrettyPrint</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">SEJSONViewController</span> <span class="comment">(0</span>.<span class="comment">1</span>.<span class="comment">0)</span>
+ <span class="comment">Easily</span> <span class="comment">browse</span> <span class="comment">JSON</span> <span class="comment">content</span>.
+ <span class="comment">pod</span> <span class="comment">'SEJSONViewController'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">0'</span>
+ <span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/SergioEstevao/SEJSONControllerView</span>
+ <span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/SergioEstevao/SEJSONViewController</span>.<span class="comment">git</span>
+ <span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">SVJsonSchemaValidator</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">7)</span>
+ <span class="comment">Simple</span> <span class="comment">JSON</span> <span class="comment">Validator</span> <span class="comment">for</span> <span class="comment">Objective</span>-<span class="comment">C</span>.
+ <span class="comment">pod</span> <span class="comment">'SVJsonSchemaValidator'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">7'</span>
+ <span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://bitbucket</span>.<span class="comment">org/nut_code_monkey/jsonschemavalidator</span>
+ <span class="literal">-</span> <span class="comment">Source:</span>
+ <span class="comment">https://nut_code_monkey@bitbucket</span>.<span class="comment">org/nut_code_monkey/jsonschemavalidator</span>.<span class="comment">git</span>
+ <span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">7</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">6</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">4</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">3</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">2</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+ <span class="literal">-</span>&gt; <span class="comment">TouchJSON</span> <span class="comment">(1</span>.<span class="comment">1)</span>
+<span class="comment">A</span> <span class="comment">humane</span> <span class="comment">JSON</span> <span class="comment">Objective</span>-<span class="comment">C</span> <span class="comment">un</span>-<span class="comment">framework</span>. <span class="comment">(TouchJSON</span> <span class="comment">has</span> <span class="comment">been</span> <span class="comment">deprecated</span> <span class="literal">-</span> <span class="comment">see</span>
+<span class="comment">README)</span>.
+<span class="comment">pod</span> <span class="comment">'TouchJSON'</span>, <span class="comment">'~</span>&gt; <span class="comment">1</span>.<span class="comment">1'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/touchcode/</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/TouchCode/TouchJSON</span>.<span class="comment">git</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">1</span>, <span class="comment">1</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
+
+
+<span class="literal">-</span>&gt; <span class="comment">VeriJSON</span> <span class="comment">(0</span>.<span class="comment">1</span>.<span class="comment">1)</span>
+<span class="comment">An</span> <span class="comment">Objective</span>-<span class="comment">C</span> <span class="comment">library</span> <span class="comment">for</span> <span class="comment">verifying</span> <span class="comment">JSON</span> <span class="comment">against</span> <span class="comment">a</span> <span class="comment">pattern</span>-<span class="comment">based</span> <span class="comment">schema</span>.
+<span class="comment">pod</span> <span class="comment">'VeriJSON'</span>, <span class="comment">'~</span>&gt; <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">1'</span>
+<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://bitbucket</span>.<span class="comment">org/dcutting/verijson</span>
+<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://bitbucket</span>.<span class="comment">org/dcutting/verijson</span>
+<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">1</span>, <span class="comment">0</span>.<span class="comment">1</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]</code></pre>
+<p>➜    ~ </p>
 <h4>使用</h4>
 <p>首先通过终端进入工程文件建立podfile文件</p>
 <pre><code>  <span class="title">touch</span> Podfile
    vim Podfile</code></pre>
 <p> 然后你可以在podfile文件中添加你所需要的库的名称和版本</p>
-<pre><code>  <span class="title">platform</span> :ios
-  dependency <span class="string">'JSONKit'</span>, <span class="string">'~&gt; 1.5pre'</span>
-  wq!（保存退出）</code></pre>
+<pre><code>     <span class="title">platform</span> :ios, <span class="string">'6.0'</span>
+    pod <span class="string">'JSONKit'</span>, <span class="string">'~&gt; 1.5pre'</span>
+      wq!（保存退出）</code></pre>
 <p> 然后在执行</p>
 <pre><code>   <span class="title">pod</span> install</code></pre>
 <p> 注意 你每次更改完Podfile文件后都要执行pod install<br> 做完这些后你就可以在你的工程目录下看见一个后缀为.xcworkspace你写项目打开这个就OK了。打开看以后会发现其实cocoapods做了一个事情就是他把第三方库都编译成了一个库文件。然后你的项目中去包含头文件，libPods.a被作为framework集成到目标项目。Pods.xcconfig 中配置了XCode编译的查找路径，通过这种方式将所有的第三方包来引入到项目中。</p>
-<h4>查找</h4>
-<p>你可以通过</p>
-<pre><code> <span class="title">pod</span> search XXXX(来查找你所需要得库)</code></pre>
-<p>比如查找一个我们最常用得json库</p>
-<pre><code><span class="comment">pod</span> <span class="comment">search</span> <span class="comment">json</span>                                                                                                                                   
-
-<span class="literal">-</span>&gt; <span class="comment">AnyJSON</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">1)</span>
-<span class="comment">Encode</span> <span class="comment">/</span> <span class="comment">Decode</span> <span class="comment">JSON</span> <span class="comment">by</span> <span class="comment">any</span> <span class="comment">means</span> <span class="comment">possible</span>.
-<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/mattt/AnyJSON</span>
-<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/mattt/AnyJSON</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
-
-
-<span class="literal">-</span>&gt; <span class="comment">JSONKit</span> <span class="comment">(1</span>.<span class="comment">5pre)</span>
-<span class="comment">A</span> <span class="comment">Very</span> <span class="comment">High</span> <span class="comment">Performance</span> <span class="comment">Objective</span>-<span class="comment">C</span> <span class="comment">JSON</span> <span class="comment">Library</span>.
-<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/johnezang/JSONKit</span>
-<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">git://github</span>.<span class="comment">com/johnezang/JSONKit</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">5pre</span>, <span class="comment">1</span>.<span class="comment">4</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
-
-
-<span class="literal">-</span>&gt; <span class="comment">MTJSONDictionary</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">4)</span>
-<span class="comment">An</span> <span class="comment">NSDictionary</span> <span class="comment">category</span> <span class="comment">for</span> <span class="comment">when</span> <span class="comment">you're</span> <span class="comment">working</span> <span class="comment">with</span> <span class="comment">it</span> <span class="comment">converting</span> <span class="comment">to/from</span> <span class="comment">JSON</span>. <span class="comment">DEPRECATED</span>, <span class="comment">use</span> <span class="comment">MTJSONUtils</span> <span class="comment">instead</span>.
-<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONDictionary</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONDictionary</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">4</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">3</span>, <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">2</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
-
-
-<span class="literal">-</span>&gt; <span class="comment">MTJSONUtils</span> <span class="comment">(0</span>.<span class="comment">0</span>.<span class="comment">1)</span>
-<span class="comment">NSObject</span> <span class="comment">category</span> <span class="comment">for</span> <span class="comment">working</span> <span class="comment">JSON</span> <span class="comment">convertions</span> <span class="comment">with</span> <span class="comment">suport</span> <span class="comment">keypaths</span> <span class="comment">(</span>[<span class="comment">dict</span> <span class="comment">valueForComplexKeyPath:@"parents</span>[<span class="comment">0</span>]<span class="string">.</span><span class="comment">children</span>[<span class="comment">first</span>]<span class="string">.</span><span class="comment">toys</span>[<span class="comment">last</span>]<span class="comment">"</span>]<span class="comment">)</span>
-<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONUtils</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/mysterioustrousers/MTJSONUtils</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">0</span>.<span class="comment">0</span>.<span class="comment">1</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
-
-
-<span class="literal">-</span>&gt; <span class="comment">SBJson</span> <span class="comment">(3</span>.<span class="comment">1</span>.<span class="comment">1)</span>
-<span class="comment">This</span> <span class="comment">library</span> <span class="comment">implements</span> <span class="comment">strict</span> <span class="comment">JSON</span> <span class="comment">parsing</span> <span class="comment">and</span> <span class="comment">generation</span> <span class="comment">in</span> <span class="comment">Objective</span>-<span class="comment">C</span>.
-<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">http://stig</span>.<span class="comment">github</span>.<span class="comment">com/json</span>-<span class="comment">framework/</span>
-<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/stig/json</span>-<span class="comment">framework</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">3</span>.<span class="comment">1</span>.<span class="comment">1</span>, <span class="comment">3</span>.<span class="comment">1</span>, <span class="comment">3</span>.<span class="comment">0</span>.<span class="comment">4</span>, <span class="comment">2</span>.<span class="comment">2</span>.<span class="comment">3</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]
-
-
- <span class="literal">-</span>&gt; <span class="comment">TouchJSON</span> <span class="comment">(1</span>.<span class="comment">0)</span>
-<span class="comment">TouchJSON</span> <span class="comment">is</span> <span class="comment">an</span> <span class="comment">Objective</span>-<span class="comment">C</span> <span class="comment">based</span> <span class="comment">parser</span> <span class="comment">and</span> <span class="comment">generator</span> <span class="comment">for</span> <span class="comment">JSON</span> <span class="comment">encoded</span> <span class="comment">data</span>.
-<span class="literal">-</span> <span class="comment">Homepage:</span> <span class="comment">https://github</span>.<span class="comment">com/TouchCode/TouchJSON</span>
-<span class="literal">-</span> <span class="comment">Source:</span>   <span class="comment">https://github</span>.<span class="comment">com/TouchCode/TouchJSON</span>.<span class="comment">git</span>
-<span class="literal">-</span> <span class="comment">Versions:</span> <span class="comment">1</span>.<span class="comment">0</span> <span class="title">[</span><span class="comment">master</span> <span class="comment">repo</span>]</code></pre>
 
       
     </div>
